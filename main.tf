@@ -18,5 +18,5 @@ resource "aws_db_instance" "default" {
 }
 
 variable "psw" {
-  type = string
+  type = "string"
 }
