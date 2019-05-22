@@ -16,3 +16,7 @@ resource "aws_db_instance" "default" {
   password            = "${var.psw}"
   skip_final_snapshot = true
 }
+
+variable "psw" {
+  type = "string"
+}
