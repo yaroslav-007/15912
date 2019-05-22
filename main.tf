@@ -13,6 +13,6 @@ resource "aws_db_instance" "default" {
   instance_class      = "db.t2.micro"
   name                = "mydbtest"
   username            = "atans"
-  password            = ""
+  password            = "${var.psw}"
   skip_final_snapshot = true
 }
